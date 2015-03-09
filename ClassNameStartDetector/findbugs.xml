@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FindbugsPlugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   				xsi:noNamespaceSchemaLocation="findbugsplugin.xsd"
+				pluginid="DEMO.findbugs.plugin"
+                defaultenabled="true"
+                provider="DEMO" 
+                website="http://soal.org/">
+                
+  <Detector class="main.ClassNameStartDetector" speed="fast" reports="ClassName_Bug"/> 
+  <BugPattern type="ClassName_Bug" abbrev="DEMO" category="BAD_PRACTICE" />
+  
+</FindbugsPlugin>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MessageCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="messagecollection.xsd">
+
+	<Plugin>
+		<ShortDescription>DEMO FindBugs Plugin</ShortDescription>
+		<Details><![CDATA[<p>A plugin created for the second LJC Unconference.</p>]]></Details>
+	</Plugin>
+
+	<BugCode abbrev="DEMO">A bug found by the DEMO plugin.</BugCode>
+	
+	<Detector class="main.ClassNameStartDetector">
+		<Details><![CDATA[<p>Example detector class 1.</p>]]></Details>
+	</Detector>
+	
+	<BugPattern type="ClassName_Bug">
+		<ShortDescription>Bad Class Name</ShortDescription>
+		<LongDescription>Bad Class Name , use a name starting with upper case</LongDescription>
+		<Details><![CDATA[<p>How to fix bug type 1...</p>]]></Details>
+	</BugPattern>
+	
+</MessageCollection>
